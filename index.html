@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopZone | Modern Online Store</title>
+
+  <!-- Google Font (needs internet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <path d="M16 10a4 4 0 0 1-8 0"/>
+      </svg>
+      Shop<span>Zone</span>
+    </a>
+
+    <!-- Search bar -->
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Search for products, brands and more..." />
+    </div>
+
+    <!-- Cart button with item-count badge -->
+    <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+      </svg>
+      <span class="cart-text">Cart</span>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <!-- ================= HERO / BANNER ================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">MEGA SEASON SALE</p>
+      <h1>Shop Smart.<br /><span>Live Better.</span></h1>
+      <p class="hero-sub">
+        Discover the latest electronics, fashion and accessories —
+        hand-picked quality at unbeatable prices.
+      </p>
+      <a href="#products" class="hero-btn">Shop Now &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTS ================= -->
+  <main class="products-section" id="products">
+    <h2 class="section-title">Our Products</h2>
+    <p class="section-sub">Trending picks, loaded live from <code>products.json</code></p>
+
+    <!-- Product cards are inserted here by script.js -->
+    <div class="product-grid" id="productGrid"></div>
+
+    <!-- Shown when a search matches nothing -->
+    <p class="no-results" id="noResults" hidden>No products match your search.</p>
+  </main>
+
+  <!-- ================= CART DRAWER ================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-cart" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Cart items are inserted here by script.js -->
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Checkout</button>
+      <button class="clear-btn" id="clearCartBtn">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- Small popup message ("Added to cart", etc.) -->
+  <div class="toast" id="toast"></div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>&copy; 2026 ShopZone &mdash; Built with HTML, CSS &amp; Vanilla JavaScript</p>
+  </footer>
+
+  <!-- Our JavaScript (loaded last so the HTML exists first) -->
+  <script src="script.js"></script>
+</body>
+</html>

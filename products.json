@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 59.99,
+    "rating": 4.5,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Classic Smart Watch",
+    "category": "Electronics",
+    "price": 129.99,
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Running Sneakers",
+    "category": "Fashion",
+    "price": 89.99,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Urban Travel Backpack",
+    "category": "Accessories",
+    "price": 49.99,
+    "rating": 4.4,
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Retro Sunglasses",
+    "category": "Accessories",
+    "price": 24.99,
+    "rating": 4.3,
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Retro Instant Camera",
+    "category": "Electronics",
+    "price": 549.99,
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Essential Cotton T-Shirt",
+    "category": "Fashion",
+    "price": 19.99,
+    "rating": 4.2,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Luxury Perfume",
+    "category": "Beauty",
+    "price": 79.99,
+    "rating": 4.6,
+    "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"
+  }
+]
